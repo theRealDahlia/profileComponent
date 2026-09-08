@@ -26,17 +26,11 @@ function App() {
       <div className="flex h-30 w-90 bg-indigo-400 rounded-2xl mx-auto my-40">
 
         {/* avatar section */}
-        <div className="flex flex-col w-27 pt-2 justify-center items-center">
+        <div className="flex flex-col w-27 justify-center items-center">
           <img
             className='w-20 aspect-square rounded-full object-cover '
             src={heidiProf.profilePic}
             alt='profile picture' />
-
-          {/* username */}
-          <div className='pt-1'>
-            <span className='inline-block w-25 truncate text-sm font-medium '>{heidiProf.userName}</span>
-          </div>
-
         </div>
 
         {/* Name and profession */}
