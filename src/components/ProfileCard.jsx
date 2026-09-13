@@ -9,7 +9,6 @@ export function ProfileCard() {
             lastName: 'Turbowitz',
             userName: '@dontshakemysalt',
             profession: 'Exotic Gummy Bear Dealer',
-            blurb: '',
             profilePic: felix,
         },
         {
@@ -17,7 +16,6 @@ export function ProfileCard() {
             lastName: 'Kraemer',
             userName: '@bungaloShampew8)',
             profession: 'Wild Hampster Tamer',
-            blurb: '',
             profilePic: heidi,
 
         }
@@ -32,14 +30,14 @@ export function ProfileCard() {
 
         return (
             <div key={i}>
-                < div className="flex h-30 w-90 bg-indigo-400 rounded-2xl mx-auto my-40" >
+                < div className="flex h-30 w-90 bg-violet-800 rounded-2xl mx-auto my-40 shadow-xl/60 shadow-teal-300" >
                     < div className="flex flex-col w-27 justify-center items-center" >
                         <img
-                            className='w-20 aspect-square rounded-full object-cover '
+                            className='w-20 aspect-square rounded-full object-cover'
                             src={p.profilePic}
                             alt='profile picture' />
                     </div >
-                    < div className="w-63 flex flex-col " >
+                    < div className="w-63 flex flex-col rounded-2xl" >
                         <span className='text-2xl text-stone-300 max-w-62 px-3 pt-2'>{p.firstName} {p.lastName}</span>
                         <span className='text-sm text-stone-300 font-medium px-3 pt-1 '>{p.userName}</span>
                         <div className='pt-4 px-3 flex flex-col w-40'>
